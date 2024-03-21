@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>School Website</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="login-container">
+      <h2>Login</h2>
+      <form id="loginForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required />
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+        <button type="submit">Login</button>
+      </form>
+    </div>
+
+    <div class="main-container hidden">
+      <div class="school-image">
+        <img src="school-image.png" alt="School Image" />
+      </div>
+
+      <h2>Welcome to Our School</h2>
+
+      <section>
+        <h3>About Us</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, sequi
+          autem incidunt mollitia rerum neque eum dolores debitis quaerat rem,
+          cum iure, magnam blanditiis ea nam possimus natus sed? Placeat, alias
+          eligendi magnam similique quidem odio, sequi ea doloribus eos ipsam
+          cupiditate nisi. Ea optio praesentium reprehenderit totam eius,
+          deserunt officiis ab earum eveniet iste est placeat, dolor sequi?
+          Minus quam perspiciatis laborum culpa esse facilis natus debitis at
+          ullam deleniti animi unde est cum saepe iusto tempore velit mollitia
+          itaque doloremque quisquam consectetur, rerum voluptas. Cumque enim
+          beatae, ad aspernatur atque reprehenderit, illo, ipsum autem ducimus
+          pariatur numquam minus.
+        </p>
+      </section>
+
+      <section>
+        <h3>History</h3>
+        <p>
+          Our school has a rich history of providing quality education since
+          [year].
+        </p>
+      </section>
+
+      <section>
+        <h3>Upcoming Events</h3>
+        <!-- <ul>
+          <li>Event 1 - Date</li>
+          <li>Event 2 - Date</li>
+          <li>Event 3 - Date</li>
+        </ul> -->
+        <div class="events-container">
+          <canvas class="event-canvas" id="eventCanvas1"></canvas>
+          <canvas class="event-canvas" id="eventCanvas2"></canvas>
+          <canvas class="event-canvas" id="eventCanvas3"></canvas>
+        </div>
+      </section>
+
+      <section>
+        <h3>Student Results</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Grade</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="student-row">
+              <td>Student 1</td>
+              <td>A</td>
+            </tr>
+            <tr class="marks-table hidden">
+              <td colspan="2">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Subject</th>
+                      <th>Marks</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Subject 1</td>
+                      <td>85</td>
+                    </tr>
+                    <tr>
+                      <td>Subject 2</td>
+                      <td>90</td>
+                    </tr>
+                    <!-- Add more subject rows as needed -->
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+            <!-- Add more student rows and corresponding marks tables as needed -->
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h3>Faculties</h3>
+        <ul>
+          <li>Faculty 1 - Subject</li>
+          <li>Faculty 2 - Subject</li>
+          <li>Faculty 3 - Subject</li>
+        </ul>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
